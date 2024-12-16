@@ -1,1 +1,1 @@
-A set of python scripts based directly on the Mavic M3 image analysis guidlines provided by DJI. Specifically intended to correct multispectral drone images prior to analysis - WIP.
+A set of python scripts based directly on the Mavic M3 image analysis guidlines provided by DJI. Specifically intended to correct multispectral drone images prior to analysis. Original guidlines can be found at: https://dl.djicdn.com/downloads/DJI_Mavic_3_Enterprise/20230829/Mavic_3M_Image_Processing_Guide_EN.pdf - WIP.
