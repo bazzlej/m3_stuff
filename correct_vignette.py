@@ -53,7 +53,6 @@ k = list(map(Decimal, k))
 
 ## Dewarping
 dw_data = str.split(re.sub(r'"\W+','',str.split(str.split(dw.string,'=')[1],';')[1]),',')
-camera_matrix =
 
 print("XML opened")
 

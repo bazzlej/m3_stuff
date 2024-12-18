@@ -47,7 +47,7 @@ dw_data = list(map(float, str.split(re.sub(r'"\W+','',str.split(str.split(dw.str
 camera_matrix = numpy.array([(dw_data[0],0,cx-dw_data[2]),(0,dw_data[1],cy-dw_data[3]),(0,0,1)])
 dist_coeffs = numpy.array([[dw_data[4],dw_data[5],dw_data[6],dw_data[7],dw_data[8]]])
 
-img = cv2.imread(in_file)
+img = cv2.imread(in_file, -1)
 h, w = img.shape[:2]
 
 new_camera_matrix, roi = cv2.getOptimalNewCameraMatrix(camera_matrix, dist_coeffs, (w,h), 1, (w,h))
