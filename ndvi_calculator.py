@@ -96,18 +96,10 @@ k = 0
 for i in range(red_h) :
     ndvi_csv_writable.append([])
     for j in range(red_w) :
-        if(not red_data[k] == 0 and not nir_data[k] == 0):
-            if(ndvi_data[k] > 1) :
-                ndvi_csv_writable[i].append(1)
-            elif(ndvi_data[k] <1) :
-                ndvi_csv_writable[i].append(-1)
-            else:
-                ndvi_csv_writable[i].append(ndvi_data[k])
-        else :
-            ndvi_csv_writable[i].append(0)
+        ndvi_csv_writable[i].append(ndvi_data[k])
         k = k + 1
 
-make_file(run_name+"ndvi_out.csv",ndvi_csv_writable)
+make_file(run_name+"_ndvi_out.csv",ndvi_csv_writable)
 
 if(output==1) :
     for i in range(len(ndvi_data)) :
